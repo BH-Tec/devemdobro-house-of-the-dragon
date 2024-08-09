@@ -3,6 +3,16 @@
 	src: url(../fonts/GOT.ttf);
 }
 
+@font-face {
+	font-family: "TrajanPro-Regular";
+	src: url(../fonts/TrajanPro-Regular.woff2);
+}
+
+@font-face {
+	font-family: "Street2-Thin";
+	src: url(../fonts/Street2-Thin.woff2);
+}
+
 /* Reset */
 * {
 	margin: 0;
@@ -12,7 +22,8 @@
 
 /* Body */
 body {
-	font-family: "Poppins", sans-serif;
+	/* font-family: "Poppins", sans-serif; */
+	font-family: "TrajanPro-Regular", "Street2-Thin", serif;
 	color: white;
 	max-width: 1280px;
 	margin: 0 auto;
@@ -55,8 +66,8 @@ body {
 
 .informacoes h1 {
 	font-family: "GOT";
-	font-size: 35px;
-	margin-bottom: 80px;
+	font-size: 40px;
+	margin-bottom: 60px;
 	letter-spacing: 8px;
 }
 
@@ -99,4 +110,9 @@ main:after {
 	left: 0;
 	background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
 	z-index: -1;
+}
+
+@keyframes mudarImagem{
+	from { opacity: 0.85; }
+	to {opacity: 1; }
 }
